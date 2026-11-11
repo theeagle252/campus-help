@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHelp | Student Support Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Campus<span>Help</span></div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+            </ul>
+
+            <a href="#request" class="nav-button">
+                Submit a Request
+            </a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="welcome-text">
+                    YOUR CAMPUS, YOUR SUPPORT SYSTEM
+                </p>
+
+                <h1>
+                    Need Help on Campus?
+                    <span>We've Got You Covered.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Submit your academic or administrative concerns
+                    easily and keep track of your requests.
+                    We're making student support simpler.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#request" class="primary-button">
+                        Submit a Request
+                    </a>
+
+                    <a href="#how-it-works" class="secondary-button">
+                        Learn How It Works
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+
+            <div class="section-heading">
+                <p>HOW WE CAN HELP</p>
+                <h2>Support Made Simple</h2>
+                <span>
+                    Get assistance with common campus-related concerns.
+                </span>
+            </div>
+
+            <div class="service-container">
+
+                <div class="service-card">
+                    <h3>Academic Support</h3>
+                    <p>
+                        Report issues relating to course registration,
+                        results, examinations and academic activities.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Administrative Support</h3>
+                    <p>
+                        Get help with student records, documentation,
+                        payments and other administrative concerns.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Request Tracking</h3>
+                    <p>
+                        Keep track of your submitted requests
+                        and check their current status.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+
+            <div class="section-heading">
+                <p>THREE SIMPLE STEPS</p>
+                <h2>How CampusHelp Works</h2>
+            </div>
+
+            <div class="steps-container">
+
+                <div class="step">
+                    <h3>01. Submit</h3>
+                    <p>
+                        Fill in the support request form
+                        with details of your concern.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <h3>02. Track</h3>
+                    <p>
+                        View your request and monitor
+                        its progress.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <h3>03. Resolve</h3>
+                    <p>
+                        Check when your request has
+                        been marked as resolved.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Request Section Placeholder -->
+
+<!-- STUDENT REQUEST FORM -->
+<section class="request-section" id="request">
+
+    <div class="section-heading">
+        <p>WE ARE HERE TO HELP</p>
+        <h2>Submit a Support Request</h2>
+        <span>
+            Tell us what you need help with. Provide accurate
+            information so your request can be properly identified.
+        </span>
+    </div>
+
+    <div class="form-container">
+
+        <form id="requestForm">
+
+            <!-- Student Name -->
+            <div class="form-group">
+                <label for="studentName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    name="studentName"
+                    placeholder="Enter your full name"
+                    required
+                    minlength="3"
+                >
+            </div>
+
+<!-- Matriculation Number -->
+<div class="form-group">
+    <label for="matricNumber">Matriculation Number</label>
+
+    <input
+        type="text"
+        id="matricNumber"
+        name="matricNumber"
+        placeholder="Enter your matriculation number"
+        required
+        minlength="3"
+    >
+</div>
+
+
+
+            <!-- Student Email -->
+            <div class="form-group">
+                <label for="studentEmail">Email Address</label>
+
+                <input
+                    type="email"
+                    id="studentEmail"
+                    name="studentEmail"
+                    placeholder="example@email.com"
+                    required
+                >
+            </div>
+
+
+            <!-- Request Category -->
+            <div class="form-group">
+                <label for="category">Request Category</label>
+
+                <select id="category" name="category" required>
+
+                    <option value="">Select a category</option>
+
+                    <option value="Academic">
+                        Academic Support
+                    </option>
+
+                    <option value="Administrative">
+                        Administrative Support
+                    </option>
+
+                    <option value="Technical">
+                        Technical Support
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+            </div>
+
+
+            <!-- Request Subject -->
+            <div class="form-group">
+                <label for="subject">Request Subject</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Briefly describe your issue"
+                    required
+                    minlength="5"
+                >
+            </div>
+
+
+            <!-- Request Description -->
+            <div class="form-group">
+                <label for="description">Describe Your Issue</label>
+
+                <textarea
+                    id="description"
+                    name="description"
+                    rows="5"
+                    placeholder="Provide more details about the problem..."
+                    required
+                    minlength="10"
+                ></textarea>
+            </div>
+
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">
+                Submit Request
+            </button>
+
+            <p class="form-note">
+                Your information is used only for this local demonstration.
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- SUBMITTED REQUESTS SECTION -->
+<section class="requests-section" id="my-requests">
+
+    <div class="section-heading">
+        <p>REQUEST HISTORY</p>
+        <h2>Your Submitted Requests</h2>
+        <span>
+            View your requests and monitor their progress.
+        </span>
+    </div>
+
+    <div id="requestsList" class="requests-list">
+
+        <p class="empty-message">
+            You haven't submitted any requests yet.
+        </p>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CampusHelp. Student Support Made Simple.</p>
+        <p>Local demonstration project. Requests are stored in this browser only.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
